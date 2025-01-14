@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Picker</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/l.png">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+<nav class="bg-blue-600 text-white px-6 py-4">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-4 relative"> <!-- Added relative positioning -->
+      <img src="assets/l.png" alt="Luna Picker Logo" class="h-16 w-auto object-contain">
+      <h1 class="text-2xl font-bold">Luna Picker</h1>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-toggle" class="block lg:hidden z-10"> <!-- Ensure z-index for the button -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <div id="menu" class="hidden lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-center lg:justify-center">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About us</a>
+      <a href="features.html" class="hover:underline">Features</a>
+      <a href="blog.html" class="hover:underline">Blog</a>
+      <a href="contact.html" class="hover:underline">Contact us</a>
+    </div>
+  </div>
+</nav>
+
+      <main class="container mx-auto px-4 py-8">
+        <section id="contact" class="py-16 px-4">
+          <div class="max-w-7xl mx-auto text-center mb-12">
+              <h1 class="text-4xl font-bold text-gray-900">Connect with Us</h1>
+              <p class="text-lg text-gray-900 mt-4">Whether you have questions or just want to say hi, we're here to help.</p>
+          </div>
+        
+        <section id="customer-support" class="mb-8">
+          <h2 class="text-3xl font-bold text-blue-600 mb-4"></h2>Support</h2>
+          <ul class="list-disc list-inside text-gray-700">
+              <li>Email: support@lunapicker.com</li>
+              <li>Phone: 09 455 507 081</li>
+          </ul>
+      </section>
+      
+        <section id="feedback">
+          <h2 class="text-3xl font-bold text-blue-600 mb-4">Feedback</h2>
+          <form action="thank.html" method="POST" class="bg-white p-6 rounded-lg shadow-lg">
+              <div class="mb-4">
+                  <label for="name" class="block text-gray-700 font-medium">Your Name</label>
+                  <input type="text" id="name" name="name" class="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div class="mb-4">
+                  <label for="email" class="block text-gray-700 font-medium">Your Email</label>
+                  <input type="email" id="email" name="email" class="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div class="mb-4">
+                  <label for="message" class="block text-gray-700 font-medium">Your Feedback</label>
+                  <textarea id="message" name="message" rows="4" class="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+              </div>
+              <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Submit</button>
+          </form>
+          <a href="#top" class="top">&uparrow;</a>
+      </section>
+      </main>
+    <footer class="bg-blue-600 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2024 Luna Picker. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  <script>
+        const menu = document.getElementById('menu');
+      const toggle = document.getElementById('menu-toggle');
+
+      // Toggle the visibility of the menu
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('show');
+      });
+
+  </script>
+</body>
+</html>

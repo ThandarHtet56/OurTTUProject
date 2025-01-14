@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Picker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/l.png">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <!-- Full Page Layout -->
+    <div class="flex flex-col min-h-screen">
+
+        <nav class="bg-blue-600 text-white px-6 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-4">
+                    <img src="assets/l.png" alt="Luna Picker Logo" class="h-16 w-auto object-contain">
+                    <h1 class="text-2xl font-bold">Luna Picker</h1>
+                </div>
+                <!-- Hamburger Menu Button -->
+                <button id="menu-toggle" class="block lg:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+    
+                <!-- Navigation Links -->
+                <div id="menu" class="hidden lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-center lg:justify-center">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <a href="about.html" class="hover:underline">About us</a>
+                    <a href="features.html" class="hover:underline">Features</a>
+                    <a href="blog.html" class="hover:underline">Blog</a>
+                    <a href="contact.html" class="hover:underline">Contact us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow flex items-center justify-center px-4">
+            <div class="bg-white max-w-lg w-full p-8 shadow-lg rounded-lg text-center">
+                <h2 class="text-4xl font-bold text-blue-600 mb-6">Thank You!</h2>
+                <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+                    Your feedback has been successfully completed. We appreciate your interest in Luna Picker!
+                </p>
+                <a href="index.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
+                    Go Back to Home
+                </a>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-blue-600 text-white py-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 Luna Picker. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    
+  <!-- JavaScript for Responsive Menu -->
+  <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        });
+  </script>
+</body>
+
+</html>

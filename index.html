@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Picker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="assets/l.png">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation Bar -->
+<nav class="bg-blue-600 text-white px-6 py-4">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center space-x-4 relative"> <!-- Added relative positioning -->
+      <img src="assets/l.png" alt="Luna Picker Logo" class="h-16 w-auto object-contain">
+      <h1 class="text-2xl font-bold">Luna Picker</h1>
+    </div>
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-toggle" class="block lg:hidden z-10"> <!-- Ensure z-index for the button -->
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <div id="menu" class="hidden lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-center lg:justify-center">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About us</a>
+      <a href="features.html" class="hover:underline">Features</a>
+      <a href="blog.html" class="hover:underline">Blog</a>
+      <a href="contact.html" class="hover:underline">Contact us</a>
+    </div>
+  </div>
+</nav>
+
+  <!-- Home Section -->
+  <header class="bg-gray-200 py-16">
+    <div class="container mx-auto text-center px-4">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Luna Picker</h2>
+      <p class="text-lg text-gray-900">Discover our innovative robot designed to make your tasks easier and more efficient.</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="px-8 md:px-24 lg:px-40 py-16 text-center">
+    <div class="md:flex md:items-center">
+      <div class="md:w-1/2 md:text-left">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          SMART PICKS<br>
+          <span class="text-blue-500">FOR SMARTER LIVES</span>
+        </h1>
+        <p class="mt-6 text-gray-600">
+          Luna Picker, our Arduino-powered robotic arm, is here to create a world where picking objects is as easy as giving a command. Whether you are a tech enthusiast, a caregiver, or just somebody seeking efficiency, here you got Luna Picker.
+        </p>
+        <div class="mt-8 space-x-4">
+          <a href="blog.html">
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600">
+              Explore now
+            </button>
+          </a>
+          <a href="features.html">
+            <button class="bg-gray-200 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-300">
+              Learn more
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="assets/images/f.png" alt="Mobile App" class="mx-auto md:ml-auto md:w-96">
+      </div>
+    </div>
+  </section>
+
+  <!-- Aim and Objectives Section -->
+  <section id="aim-objectives" class="py-16">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-8">Aim and Objectives</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Our Aim</h4>
+          <p class="text-gray-700">To revolutionize automation with cutting-edge technology and seamless operation.</p>
+        </div>
+        <div>
+          <h4 class="text-xl font-semibold mb-2">Our Objectives</h4>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Improve operational efficiency in various industries.</li>
+            <li>Enhance the accuracy and speed of robotic systems.</li>
+            <li>Provide an eco-friendly and sustainable solution.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a href="#top" class="top">&uparrow;</a>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Luna Picker. All rights reserved.</p>
+    </div>
+  </footer>
+
+   <!-- JavaScript for Responsive Menu -->
+   <script>
+    const menu = document.getElementById('menu');
+   const toggle = document.getElementById('menu-toggle');
+
+   // Toggle the visibility of the menu
+   toggle.addEventListener('click', () => {
+     menu.classList.toggle('hidden');
+     menu.classList.toggle('show');
+   });
+</script>
+ 
+</body>
+</html>

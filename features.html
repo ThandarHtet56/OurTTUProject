@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Picker</title>
+   <link rel="stylesheet" href="css/fe.css">
+   <link rel="stylesheet" href="css//tailwind.css">
+   <link rel="shortcut icon" href="assets/l.png">
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    
+    <!-- Navigation Bar -->
+<nav class="bg-blue-600 text-white px-6 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4 relative"> <!-- Added relative positioning -->
+        <img src="assets/l.png" alt="Luna Picker Logo" class="h-16 w-auto object-contain">
+        <h1 class="text-2xl font-bold">Luna Picker</h1>
+      </div>
+  
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="block lg:hidden z-10"> <!-- Ensure z-index for the button -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+  
+      <!-- Navigation Links -->
+      <div id="menu" class="hidden lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-center lg:justify-center">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About us</a>
+        <a href="features.html" class="hover:underline">Features</a>
+        <a href="blog.html" class="hover:underline">Blog</a>
+        <a href="contact.html" class="hover:underline">Contact us</a>
+      </div>
+    </div>
+  </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="overview" class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Key Features Overview</h2>
+            <p class="text-gray-900 mb-4">Discover the unique functionalities and innovative design of Luna Picker, your solution to efficient and precise tasks.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="assets/images/u1.jpg" alt="Feature 1" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">High Precision Picking</h3>
+                    <p>Experience unparalleled accuracy in picking and placing tasks with cutting-edge technology.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <img src="assets/images/s8.jpg" alt="Feature 2" class="rounded-md mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Compact Design</h3>
+                    <p>Optimized for efficiency in limited spaces without compromising on performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="flex flex-wrap md:flex-nowrap gap-8 mb-6">
+            <!-- Content Section -->
+            <div class="flex-1">
+                <section id="specifications" class="mb-4">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">Technical Specifications</h2>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Weight: 6 kg</li>
+                        <li>Power Requirements for Movement: 12V, 3.75A</li>
+                        <li>Power Requirements for Arm: 12V, 7.5A</li>
+                        <li>Microcontroller: Arduino UNO R3</li>
+                        <li>App Controller for Movement: Bluetooth</li>
+                        <li>App Controller for Arm: My Luna Picker application</li>
+                        <li>Programming Language: C and C++</li>
+                    </ul>
+                </section>
+        
+                <section id="user-guide" class="mb-4">
+                    <h2 class="text-3xl font-bold text-blue-600 mb-4">User Guide</h2>
+                    <p class="text-gray-700 mb-4">Follow these steps to get started with Luna Picker:</p>
+                    <ol class="list-decimal list-inside text-gray-700">
+                        <li>Power on the robot.</li>
+                        <li>Connect to the control interface via your smartphone.</li>
+                        <li>Open <b>My Luna Picker</b> application on your phone.</li>
+                        <li>Configure the task settings.</li>
+                        <li>Start the operation and monitor progress.</li>
+                    </ol>
+                </section>
+            </div>
+        
+            <!-- Image Card Section -->
+            <div class="flex-shrink-0 w-full md:w-1/3 bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="assets/images/mlp.png" alt="Luna Picker Robot" class="w-full h-49 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-blue-600 mb-2">My Luna Picker Application</h3>
+                    <p class="text-gray-900">
+                        This application is our own application, specifically designed for arm control.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <section id="faq" class="mb-8">
+            <h2 class="text-3xl font-bold text-blue-600 mb-4">Frequently Asked Questions</h2>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-2">What is Luna Picker?</h3>
+                <p class="text-gray-700"> Luna Picker is an Arduino-powered robotic assistant designed for picking and moving objects with precision, using a robotic arm.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+                <h3 class="text-xl font-semibold mb-2">Who can use Luna Picker?</h3>
+                <p class="text-gray-700">Luna Picker is ideal for elderly individuals, people with disabilities, and those needing assistance in daily tasks.</p>
+            </div>
+
+             
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+                <h3 class="text-xl font-semibold mb-2">What features does Luna Picker offer?</h3>
+                <p class="text-gray-700">Luna Picker features self-navigation, a functional robotic arm, and the ability to pick, hold, and place items safely.
+                </p>
+            </div>
+
+             
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+                <h3 class="text-xl font-semibold mb-2">Is Luna Picker customizable?</h3>
+                <p class="text-gray-700">Yes, Luna Picker can be customized to adapt to specific needs, such as different arm attachments or task-specific programming.
+                </p>
+            </div>
+
+             
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+                <h3 class="text-xl font-semibold mb-2">What types of objects can Luna Picker handle?</h3>
+                <p class="text-gray-700">It can handle lightweight objects like square sponge , and small tools, depending on the arm attachment.</p>
+            </div>
+             
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+                <h3 class="text-xl font-semibold mb-2">Does Luna Picker require technical knowledge to operate?</h3>
+                <p class="text-gray-700">No, it is user-friendly and can be operated via a simple remote control by using my Luna  Picker application.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+                <h3 class="text-xl font-semibold mb-2">What is the power source for Luna Picker?</h3>
+                <p class="text-gray-700">Luna Picker is powered by a rechargeable battery and can operate for several hours on a single charge.</p>
+            </div>
+            <a href="#top" class="top">&uparrow;</a>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Luna Picker. All rights reserved.</p>
+        </div>
+    </footer>
+    
+     <!-- JavaScript for Responsive Menu -->
+     <script>
+        const menu = document.getElementById('menu');
+       const toggle = document.getElementById('menu-toggle');
+
+       // Toggle the visibility of the menu
+       toggle.addEventListener('click', () => {
+         menu.classList.toggle('hidden');
+         menu.classList.toggle('show');
+       });
+   </script>
+</body>
+</html>

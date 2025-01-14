@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Picker</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/tailwind-build.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/l.png">
+    
+</head>
+<body class="bg-gray-100 text-gray-800">
+    
+  <nav class="bg-blue-600 text-white px-6 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4 relative"> <!-- Added relative positioning -->
+        <img src="assets/l.png" alt="Luna Picker Logo" class="h-16 w-auto object-contain">
+        <h1 class="text-2xl font-bold">Luna Picker</h1>
+      </div>
+  
+      <!-- Hamburger Menu Button -->
+      <button id="menu-toggle" class="block lg:hidden z-10"> <!-- Ensure z-index for the button -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+  
+      <!-- Navigation Links -->
+      <div id="menu" class="hidden lg:flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 mt-4 lg:mt-0 text-center lg:justify-center">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="about.html" class="hover:underline">About us</a>
+        <a href="features.html" class="hover:underline">Features</a>
+        <a href="blog.html" class="hover:underline">Blog</a>
+        <a href="contact.html" class="hover:underline">Contact us</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-600">Our Innovators</h1>
+            <p class="text-lg text-gray-900 mt-4">Meet the brilliant minds who bring the Luna Picker to life, each contributing unique skills to our mission.</p>
+            <p class="text-md text-gray-600 mt-2">Project Start Date: 12<sup>th</sup> June 2024</p>
+        </div>
+        
+        <!-- Team Members -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+           <!-- Supervisor Card -->
+           <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="assets/images/people/tr.png" alt="Supervisor 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+              <h3 class="text-xl font-semibold text-gray-900">Daw Nge (Associate Professor) </h3>
+              <p class="text-gray-600">Supervisor</p>
+          </div>
+          
+            <!-- Team Member Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/ss.jpg" alt="Team Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Su Mon Thwe</h3>
+                <p class="text-gray-600">Team Leader</p>
+            </div>
+
+            <!-- Team Member Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/pmm.jpg" alt="Team Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Phyo Myat Min</h3>
+                <p class="text-gray-600">Technician</p>
+            </div>
+
+
+            <!-- Team Member Card -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/bmt.jpg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Bhone Myat Thu</h3>
+                <p class="text-gray-600">Technician</p>
+            </div>
+
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/tdha.jpg" alt="Team Member 4" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Thandar Htet Aung</h3>
+                <p class="text-gray-600">Coder</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/pess.jpg" alt="Team Member 5" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Phoo Ei Shwe Sin</h3>
+                <p class="text-gray-600">Coder</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/hmm.jpg" alt="Team Member 6" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Hnin Mon Kyaw</h3>
+                <p class="text-gray-600">Data Analyst</p>
+           </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="assets/images/people/c.jpg" alt="Team Member 7" class="w-32 h-32 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-900">Cherry Win</h3>
+                <p class="text-gray-600">Data Analyst</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img src="assets/images/people/the.jpg" alt="Team Member 8" class="w-32 h-32 rounded-full mx-auto mb-4">
+              <h3 class="text-xl font-semibold text-gray-900">Thwel Hmue Eain</h3>
+              <p class="text-gray-600">Reporter</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="assets/images/people/thida.jpg" alt="Team Member 9" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-gray-900">Thida Aye Min</h3>
+            <p class="text-gray-600">Data Analyst</p>
+          </div>
+
+
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="assets/images/people/sto.jpg" alt="Team Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-semibold text-gray-900">Shin Thant Oo</h3>
+            <p class="text-gray-600">Data Analyst</p>
+          </div>
+        </div>
+  </section>
+  <a href="#top" class="top">&uparrow;</a>
+    </section>
+
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 Luna Picker. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      <script>
+           const menu = document.getElementById('menu');
+        const toggle = document.getElementById('menu-toggle');
+
+        // Toggle the visibility of the menu
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          menu.classList.toggle('show');
+        });
+      </script>
+</body>
+</html>
